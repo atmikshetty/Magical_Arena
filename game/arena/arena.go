@@ -63,9 +63,9 @@ func (a *Arena) performAttack(attacker, defender *player.Player) {
 
 	// Printing all the changes and outputs recieved in this function
 
-	fmt.Printf("%s is attacking %s\n", &attacker.Name, &defender.Name)
+	fmt.Printf("%s is attacking %s\n", attacker.Name, defender.Name)
 	fmt.Printf("Attackers Dice Roll: %d, Defenders Dice Roll: %d\n", attackChance, defendChance)
 	fmt.Printf("Attack Damage: %d , Defense Power: %d\n", attackDamage, defensePower)
-	fmt.Printf("Damage taken by %s is %d\n", &defender.Name, overallDamageTaken)
+	fmt.Printf("Damage taken by %s is %d\n", defender.Name, overallDamageTaken)
 	fmt.Printf("Final Stats: %s health: %d, %s health: %d\n\n", attacker.Name, attacker.Health, defender.Name, defender.Health)
 }
