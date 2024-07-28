@@ -72,4 +72,10 @@ func TestDiceRoll(t *testing.T) {
         t.Errorf("Roll %d is out of range [1,6]", roll)
     }
 }
+```
+
+# Git History
+
+As mentioned in the Google Form, local git commits have been made frequently. 
+Use 'git reflog' command to see all the commits.
 
