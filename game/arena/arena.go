@@ -23,7 +23,7 @@ func NewArena() *Arena {
 // Function for battle/fighting between the two players
 
 func (a *Arena) Fight(p1, p2 *player.Player) *player.Player { // a a pointer to the Arena type, indicating that the function is also of Arena type, both p1 and p2 are instances of player.Player type
-	attacker, defender := a.determineOrder(p1, p2) // determining the order of attack
+	attacker, defender := a.DetermineOrder(p1, p2) // determining the order of attack
 
 	for attacker.IsAlive() && defender.IsAlive() { // if both are alive then only they can attack each other
 		a.performAttack(attacker, defender)
@@ -38,7 +38,7 @@ func (a *Arena) Fight(p1, p2 *player.Player) *player.Player { // a a pointer to 
 
 // Choosing which player will attack first
 
-func (a *Arena) determineOrder(p1, p2 *player.Player) (*player.Player, *player.Player) {
+func (a *Arena) DetermineOrder(p1, p2 *player.Player) (*player.Player, *player.Player) {
 	if p1.Health <= p2.Health { // lower health will attack first
 		return p1, p2
 	}
