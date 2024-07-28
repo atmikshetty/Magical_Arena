@@ -25,12 +25,12 @@ func NewArena() *Arena {
 func (a *Arena) Fight(p1, p2 *player.Player) *player.Player { // a a pointer to the Arena type, indicating that the function is also of Arena type, both p1 and p2 are instances of player.Player type
 	attacker, defender := a.determineOrder(p1, p2) // determining the order of attack
 
-	for attacker.isAlive() && defender.isAlive() { // if both are alive then only they can attack each other
+	for attacker.IsAlive() && defender.IsAlive() { // if both are alive then only they can attack each other
 		a.performAttack(attacker, defender)
 		attacker, defender = defender, attacker // swapping attack and defense positions
 	}
 
-	if p1.isAlive() { // if p1 is alive, p1 wins
+	if p1.IsAlive() { // if p1 is alive, p1 wins
 		return p1
 	}
 	return p2 // p2 wins

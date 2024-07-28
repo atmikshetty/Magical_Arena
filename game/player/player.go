@@ -23,7 +23,7 @@ func NewPlayer(name string, health, strength, attack int) *Player {
 /*  Two more functions are required one for checking if the player is alive or dead and other
 to check how much the health of the player has reduced due to the damage taken */
 
-func (p *Player) isAlive() bool {
+func (p *Player) IsAlive() bool {
 	return p.Health > 0 // if health is greater than 0, we can say that the player is alive
 }
 
