@@ -1,4 +1,4 @@
-# Magical Arena Game - Round 1 Assignment
+# Magical Arena Game
 
 Magical Arena is a Go-based game simulation where players with different attributes battle in an arena using dice rolls to determine the outcome of their attacks and defenses.
 
