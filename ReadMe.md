@@ -75,7 +75,5 @@ func TestDiceRoll(t *testing.T) {
 ```
 
 # Git History
-
-As mentioned in the Google Form, local git commits have been made frequently. 
 Use 'git reflog' command to see all the commits.
 
